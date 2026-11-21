@@ -60,7 +60,7 @@ export const translations = {
     catPrescription: "Prescriptions",
     catDischargeSummary: "Discharge Summaries",
 
-    // Actions
+    // Actions & Form
     uploadDocument: "Upload Record",
     generateQr: "Generate Access QR",
     scanQr: "Scan Patient QR",
@@ -71,6 +71,19 @@ export const translations = {
     viewDetails: "View Details",
     refresh: "Refresh",
     selectFile: "Choose File (PDF, PNG, JPG)",
+    searchPlaceholder: "Search records by title, doctor, or hospital...",
+    filterByCategory: "Filter by Category",
+    addRecord: "Add New Record",
+    cancel: "Cancel",
+    submit: "Save Record",
+    docTitle: "Document Title",
+    category: "Category",
+    date: "Date",
+    doctorHospital: "Doctor & Hospital",
+    summary: "Summary / Clinical Notes",
+    findings: "Clinical Findings / Test Values",
+    noRecordsFound: "No records found matching criteria.",
+    uploadSuccess: "Medical record successfully uploaded and added to timeline!",
 
     // QR & Privacy Guardrails
     qrSecurityNotice: "Security Notice: This QR code contains only a temporary encrypted reference. It NEVER stores private medical data directly.",
@@ -156,7 +169,7 @@ export const translations = {
     catPrescription: "ವೈದ್ಯರ ಔಷಧಿ ಚೀಟಿ",
     catDischargeSummary: "ಡಿಸ್ಚಾರ್ಜ್ ಸಾರಾಂಶ",
 
-    // Actions
+    // Actions & Form
     uploadDocument: "ದಾಖಲೆ ಅಪ್‌ಲೋಡ್ ಮಾಡಿ",
     generateQr: "ಕ್ಯೂಆರ್ ಕೋಡ್ ರಚಿಸಿ",
     scanQr: "ಕ್ಯೂಆರ್ ಸ್ಕ್ಯಾನ್ ಮಾಡಿ",
@@ -167,6 +180,19 @@ export const translations = {
     viewDetails: "ವಿವರ ವೀಕ್ಷಿಸಿ",
     refresh: "ನವೀಕರಿಸಿ",
     selectFile: "ಕಡತ ಆಯ್ಕೆಮಾಡಿ (PDF, PNG, JPG)",
+    searchPlaceholder: "ಶೀರ್ಷಿಕೆ, ವೈದ್ಯರು ಅಥವಾ ಆಸ್ಪತ್ರೆಯ ಹೆಸರಿನಿಂದ ಹುಡುಕಿ...",
+    filterByCategory: "ವಿಭಾಗದ ಪ್ರಕಾರ ಫಿಲ್ಟರ್ ಮಾಡಿ",
+    addRecord: "ಹೊಸ ದಾಖಲೆ ಸೇರಿಸಿ",
+    cancel: "ರದ್ದುಮಾಡಿ",
+    submit: "ದಾಖಲೆ ಉಳಿಸಿ",
+    docTitle: "ದಾಖಲೆಯ ಶೀರ್ಷಿಕೆ",
+    category: "ವಿಭಾಗ",
+    date: "ದಿನಾಂಕ",
+    doctorHospital: "ವೈದ್ಯರು ಮತ್ತು ಆಸ್ಪತ್ರೆ",
+    summary: "ವೈದ್ಯಕೀಯ ಸಾರಾಂಶ",
+    findings: "ತಪಾಸಣಾ ಫಲಿತಾಂಶಗಳು",
+    noRecordsFound: "ಯಾವುದೇ ದಾಖಲೆಗಳು ಕಂಡುಬಂದಿಲ್ಲ.",
+    uploadSuccess: "ದಾಖಲೆಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಅಪ್‌ಲೋಡ್ ಮಾಡಲಾಗಿದೆ ಮತ್ತು ಟೈಮ್‌ಲೈನ್‌ಗೆ ಸೇರಿಸಲಾಗಿದೆ!",
 
     // QR & Privacy Guardrails
     qrSecurityNotice: "ಭದ್ರತಾ ಸೂಚನೆ: ಈ ಕ್ಯೂಆರ್ ಕೋಡ್ ಕೇವಲ ತಾತ್ಕಾಲಿಕ ಸಂಕೇತವನ್ನು ಮಾತ್ರ ಹೊಂದಿರುತ್ತದೆ. ಯಾವುದೇ ಖಾಸಗಿ ಮಾಹಿತಿಯನ್ನು ನೇರವಾಗಿ ಕ್ಯೂಆರ್‌ನಲ್ಲಿ ಶೇಖರಿಸುವುದಿಲ್ಲ.",

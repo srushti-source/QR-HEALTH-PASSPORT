@@ -42,12 +42,24 @@ A patient-controlled digital medical history platform where patients organize th
 ### Phase 2: Frontend Scaffold, Styling & Bilingual Support (Completed)
 - [x] Lightweight React 18 + Vite setup with backend API proxy
 - [x] Mobile-first, accessible CSS design system with touch-friendly elements
-- [x] 100% Bilingual localization (**English & Kannada - ಕನ್ನಡ**) across all 68 clinical and navigation keys
+- [x] 100% Bilingual localization (**English & Kannada - ಕನ್ನಡ**) across all 81 clinical and navigation keys
 - [x] One-tap language switcher with localStorage persistence
 - [x] Seamless Patient (*Ramesh Kumar*) vs. Doctor (*Dr. Ananya Rao*) demo identity switcher
 - [x] Interactive Landing Page highlighting the healthcare challenge, solution, and personas
 - [x] Frontend API client service connecting directly to backend endpoints
 - [x] Clean production build verified with 7/7 localization tests passing
+
+### Phase 3: Patient Portal & Smart Medical Timeline (Completed)
+- [x] Patient profile card with ABHA-mock ID, blood group, allergies safety strip, and emergency contact
+- [x] Medical record cards with categorized badges (MRI/CT, Lab Report, Prescription, Discharge Summary)
+- [x] Clinical parameter tables with normal ranges and status highlighting
+- [x] Real-time category filtering (All, MRI/CT, Lab Reports, Prescriptions, Discharge Summaries)
+- [x] Search bar searching by document title, doctor, clinic, or summary
+- [x] Upload modal with file validation (PDF, PNG, JPG; $\le 10\text{MB}$) & instant timeline integration
+- [x] Smart Medical Timeline with chronological vertical event milestones
+- [x] Follow-ups & Medicine scheduler with interactive add form
+- [x] Preventive Care & Missing Record alerts (Kidney function check, post-op ultrasound)
+- [x] Real-time doctor consent approval/rejection banner directly on patient dashboard
 
 ---
 
@@ -66,3 +78,4 @@ cd frontend
 npm run dev
 ```
 *Frontend runs on:* `http://localhost:5173`
+
