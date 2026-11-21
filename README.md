@@ -5,25 +5,30 @@
 
 ---
 
-## Problem Statement
+## 1. Problem Statement
 Patients' critical medical records (MRI/CT reports, lab results, prescriptions, surgery and discharge summaries) are scattered across multiple clinics, paper binders, and disjointed devices. In urgent and routine medical consultations, patients struggle to present their consolidated health history.
 
-## Solution Overview
+## 2. Solution Overview
 A patient-controlled digital medical history platform where patients organize their clinical records, track health metrics, and grant **secure, temporary, consent-based QR access** to healthcare providers.
 
 ---
 
-## Core Privacy & Security Guardrails
-- **No Raw Data in QR Codes:** QR codes carry only a short-lived opaque access token (`QHP-XXXX-...`).
-- **Patient Consent Gate:** Scanning a QR code submits an access request; medical records are only visible after patient approval.
-- **Granular Permissions:** Patients can authorize all records or restrict access to specific categories (e.g., Lab Reports only).
-- **Instant Revocation:** Patients can revoke doctor access at any time with a single tap.
-- **100% Dummy Clinical Data:** All patient and doctor records are strictly fictional for demonstration.
-- **No AI Diagnosis / Prescription:** System provides analytical comparison only, with clear disclaimers.
+## 3. Mandatory HealthTech Requirements Matrix
+
+| Hackathon Requirement | Implementation in QR Health Passport | Status |
+|---|---|---|
+| **Problem & Target Users** | Solves records fragmentation for Patients, Doctors, and Hospital staff. Clear landing page. | Completed (Phases 1-2) |
+| **Mobile & Accessibility** | Responsive touch-friendly UI (44px min targets) & high contrast design system. | Completed (Phase 2) |
+| **Local Language Support** | Full English & Kannada (**ಕನ್ನಡ**) localization across all 68 terms and labels. | Completed (Phase 2) |
+| **Data & Privacy Guardrails** | Zero raw data in QR code. Patient consent approval & instant revocation. | Completed (Phase 1) |
+| **Track Progress & Timeline** | Smart chronological timeline, follow-up reminders & old-vs-latest comparison. | Completed (Phase 1) |
+| **Safe & Responsible AI/Tech** | Analytical comparison only. Strictly no automated diagnosis or treatment prescribing. | Guardrailed |
 
 ---
 
-## Phase 1 Status: Backend Foundation & Data Models (Completed)
+## 4. Phase-Wise Status
+
+### Phase 1: Backend Foundation & Data Models (Completed)
 - [x] Node.js & Express REST API server
 - [x] Fictional patient profiles with ABHA-mock identifiers and allergy tracking
 - [x] Categorized medical records (MRI/CT, Lab Reports, Prescriptions, Discharge Summaries)
@@ -34,38 +39,30 @@ A patient-controlled digital medical history platform where patients organize th
 - [x] Previous-vs-Latest report comparison engine (HbA1c & Fasting Glucose tracking)
 - [x] 21/21 automated unit & privacy verification tests passing
 
----
-
-## Project Structure
-```text
-qr-health-passport/
-├── backend/
-│   ├── src/
-│   │   ├── data/seedData.js       # Dummy clinical dataset
-│   │   ├── store/dataStore.js     # Data store & access control logic
-│   │   └── routes/
-│   │       ├── authRoutes.js      # Demo login & user switching
-│   │       ├── patientRoutes.js   # Records, timeline, alerts, follow-ups
-│   │       ├── accessRoutes.js    # QR token generation & consent approval
-│   │       └── doctorRoutes.js    # Authorized doctor view & comparisons
-│   ├── server.js                  # Express application entry
-│   ├── test-api.js                # Automated verification test suite
-│   └── package.json
-├── frontend/                      # Phase 2 (React + Vite + Bilingual Support)
-└── README.md
-```
+### Phase 2: Frontend Scaffold, Styling & Bilingual Support (Completed)
+- [x] Lightweight React 18 + Vite setup with backend API proxy
+- [x] Mobile-first, accessible CSS design system with touch-friendly elements
+- [x] 100% Bilingual localization (**English & Kannada - ಕನ್ನಡ**) across all 68 clinical and navigation keys
+- [x] One-tap language switcher with localStorage persistence
+- [x] Seamless Patient (*Ramesh Kumar*) vs. Doctor (*Dr. Ananya Rao*) demo identity switcher
+- [x] Interactive Landing Page highlighting the healthcare challenge, solution, and personas
+- [x] Frontend API client service connecting directly to backend endpoints
+- [x] Clean production build verified with 7/7 localization tests passing
 
 ---
 
-## How to Run Backend
+## 5. How to Run the Full Application
 
+### Step 1: Start Backend
 ```bash
 cd backend
-npm install
 npm start
 ```
+*Backend runs on:* `http://localhost:5000`
 
-- API Health Check: `http://localhost:5000/api/health`
-- Demo Users: `http://localhost:5000/api/auth/demo-users`
-- Run Automated Tests: `node test-api.js`
-
+### Step 2: Start Frontend
+```bash
+cd frontend
+npm run dev
+```
+*Frontend runs on:* `http://localhost:5173`
