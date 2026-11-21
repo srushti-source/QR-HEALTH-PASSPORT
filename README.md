@@ -68,3 +68,4 @@ npm start
 - API Health Check: `http://localhost:5000/api/health`
 - Demo Users: `http://localhost:5000/api/auth/demo-users`
 - Run Automated Tests: `node test-api.js`
+
